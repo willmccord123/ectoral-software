@@ -1,0 +1,22 @@
+{
+  "name": "ectoral-software",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.ectoral.software",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "progressbar.js": "^1.1.0"
+  }
+}
